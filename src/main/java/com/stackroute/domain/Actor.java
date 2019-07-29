@@ -5,15 +5,12 @@ public class Actor {
     int age;
     String gender;
 
-
-
-
-
     public Actor(String name, int age, String gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
     }
+
     @Override
     public String toString() {
         return "Actor{" +
@@ -22,4 +19,5 @@ public class Actor {
                 ", gender='" + gender + '\'' +
                 '}';
     }
+
 }
