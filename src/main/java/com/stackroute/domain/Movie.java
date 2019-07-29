@@ -1,25 +1,35 @@
 package com.stackroute.domain;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
-public class Movie  {
+public class Movie {
 
-    private  Actor actor;
+    private String movieName="rakesh";
+    private Actor actor;
 
-    @Autowired
-
-    public void setActor( Actor actor) {
-        this.actor = actor;
-    }
 
     @Override
     public String toString() {
         return "Movie{" +
-                "actor=" + actor +
+                "movieName='" + movieName + '\'' +
+                ", actor=" + actor +
                 '}';
     }
 
+    public String getMovieName() {
+        return movieName;
+    }
 
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
+
+    public Actor getActor() {
+        return actor;
+    }
+    @Autowired
+    public void setActor(Actor actor) {
+        this.actor = actor;
+    }
 }
