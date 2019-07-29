@@ -12,6 +12,7 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         Movie movie = context.getBean(Movie.class);
         System.out.println(movie.toString());
+        System.out.println();
 
     }
 }

@@ -8,11 +8,8 @@ public class Config {
 
     @Bean
     public Actor actor(){
-        Actor actor= new Actor();
-        actor.setAge(22);;
-        actor.setGender("male");
-        actor.setName("rakesh");
-        return  actor;
+        Actor actor= new Actor(String name, int age, String gender);
+
 
 
     }
@@ -22,4 +19,9 @@ public class Config {
         movie.toString();
         return movie;
     }
-}
+    public Movie movie1()
+    {
+        Movie movie1= new Movie();
+                movie1.toString();
+                return movie1;
+    }}
