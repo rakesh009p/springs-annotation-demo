@@ -9,6 +9,10 @@ import javax.annotation.PreDestroy;
 public class BeanLifeCycleDemoBean implements InitializingBean, DisposableBean {
 
     String message;
+    public void myMethod() {
+        System.out.println("method started");
+    }
+
 
     public String getMessage() {
         return message;
